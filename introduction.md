@@ -16,3 +16,11 @@ __2. What expectations or wishes do you have on the data modeling course?__
 
 In this course I wish to get better at coding, getting to know what to type to get the results I’ve looked for and having as much fun as I already have with it. I also want to know what to do with Datasets and get to know what you can do with it.
 ___
+
+## Exercise 2 
+
+### Task 1
+![Image of Studierendenausweis_Gromer](https://github.com/dis-data-modeling-2020/dis08-assignment-1-Git-Romer/blob/master/Studierendenausweis_Gromer.jpg)
+![Image of Learning_Linux_Journey_01](https://github.com/dis-data-modeling-2020/dis08-assignment-1-Git-Romer/blob/master/Learning_Linux_Journey_01.png)
+![Image of Learning_Linux_Journey_09](https://github.com/dis-data-modeling-2020/dis08-assignment-1-Git-Romer/blob/master/Learning_Linux_Journey_09.png)
+![Image of Learning_Linux_Journey_19](https://github.com/dis-data-modeling-2020/dis08-assignment-1-Git-Romer/blob/master/Learning_Linux_Journey_19.png)
