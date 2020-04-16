@@ -2,7 +2,7 @@
 
 ## Exercise 1 
 
-Create a new file in this repository via the web interface. Use `introduction.md` as file name.
+Create a new file in this repository via the web interface. Use [`introduction.md`](introduction.md) as file name.
 
 Inside the file, first enter the following information:
 
