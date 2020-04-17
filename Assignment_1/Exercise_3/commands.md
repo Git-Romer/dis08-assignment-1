@@ -1,3 +1,7 @@
+# Exercise 3 
+### Commands:
+___
+```Shell
 merli@Gilles-Laptop MINGW64 ~/Downloads
 $ mv ./Screenshot_2020-04-16\ Visualizing\ Git.png ../Github_SSH/dis-data-modeling-2020/dis08-assignment-1-Git-Romer/Assignment_1/Exercise_3/romer-ex03.png
 
@@ -40,3 +44,5 @@ Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/dis-data-modeling-2020/dis08-assignment-1-Git-Romer
    efeac92..53e50a9  master -> master
+```
+___
