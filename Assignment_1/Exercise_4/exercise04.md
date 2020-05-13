@@ -13,7 +13,7 @@
 5. Printing it to a new File called **aufg1.txt**
 ___
 ### Number 2
-`for i in `ls *.tsv`; do echo China in $i:`cut -f9 $i | grep -Eicw "chin(a|ese)"`; done > aufg2.txt; echo Summe:`cut *.tsv -f9 | grep -Eciw "chin(a|ese)"` > aufg2.txt`
+``for i in `ls *.tsv`; do echo China in $i:`cut -f9 $i | grep -Eicw "chin(a|ese)"`; done > aufg2.txt; echo Summe:`cut *.tsv -f9 | grep -Eciw "chin(a|ese)"` > aufg2.txt``
 
 ___
 ### Number 3
