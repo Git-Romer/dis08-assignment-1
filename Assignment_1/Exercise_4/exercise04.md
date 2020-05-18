@@ -20,8 +20,8 @@ ___
 ___
 ### Number 3
 `cut -f6 *.tsv | grep -Eci "\b([[:digit:]][[:digit:]][[:digit:]][[:digit:]]-[[:digit:]][[:digit:]][[:digit:]]([[:digit:]]|x))" > aufg3.txt`
-1. the **grep** part only searches for the pattern of an ISSN being:
-	* Eight digits divided by a hyphen into two groups of four digits each, where the last digit can be an "x".
+1. The **grep** part only searches for the pattern of an ISSN being:
+	* Eight digits **(`([[:digit:]])`)** divided by a hyphen **(`(-)`)** into two groups of four digits each, where the last digit can be an "x" **(`([[:digit:]]|x)`)**.
 ___
 ### Number 4
 `cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' > aufg4.txt`
@@ -30,6 +30,13 @@ ___
 2. **sed** is used to get rid of blank spaces created in the file .
 ___
 ### Number 5
-`cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' | sort | uniq > uniq-issn.txt`
+`cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' | sort | uniq > aufg5.txt`
 1. **sort** is used to sort the found items or terms by name.
 2. **uniq** only works when the list is sorted and outputs everything but duplicates.
+___
+### Number 6
+`cut -f6 *.tsv | grep -Ewi "([[:digit:]][[:digit:]][[:digit:]][[:digit:]]-[[:digit:]][[:digit:]][[:digit:]]([[:digit:]]|x))" | sort > aufg6.txt; uniq aufg6.txt uniq-issn.txt`
+1. Does the **same** thing as **Number 5** but with another row of the table
+2. Output are two **.txt** files:
+	* **aufg6.txt** contains the sorted List of ISSN's
+	* **uniq-issn.txt** contains the unique ISSN's
