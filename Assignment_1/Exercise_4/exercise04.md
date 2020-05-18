@@ -13,12 +13,15 @@
 5. Printing it to a new File called **aufg1.txt**
 ___
 ### Number 2
-``for i in `ls *.tsv`; do echo China in $i:`cut -f9 $i | grep -Eicw "chin(a|ese)"`; done > aufg2.txt; echo Summe:`cut *.tsv -f9 | grep -Eciw "chin(a|ese)"` > aufg2.txt``
-
+``for i in `ls *.tsv`; do echo China/ese in $i:`cut -f9 $i | grep -Eicw "chin(a|ese)"`; done > aufg2.txt; echo Summe:`cut *.tsv -f9 | grep -Eciw "chin(a|ese)"` >> aufg2.txt``
+1. **for** is used to create a loop that will tell the program to run the following script "i" times wich results the number of **.tsv** files found in the directory
+2. **echo** is used to describe or explain the shown results in the final file
+3. **cut -f9** is used to only search in the ninth coloumn of the **.tsv** file, being the title one
 ___
 ### Number 3
-`cut -f6 *.tsv | grep -Ec "([[:digit:]]-[[:digit:]])" > aufg3.txt`
-
+`cut -f6 *.tsv | grep -Eci "\b([[:digit:]][[:digit:]][[:digit:]][[:digit:]]-[[:digit:]][[:digit:]][[:digit:]]([[:digit:]]|x))" > aufg3.txt`
+1. the **grep** part only searches for the pattern of an ISSN being:
+	* Eight digits divided by a hyphen into two groups of four digits each, where the last digit can be an "x"
 ___
 ### Number 4
 `cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' > aufg4.txt`
