@@ -30,6 +30,6 @@ ___
 2. **sed** is used to get rid of blank spaces created in the file .
 ___
 ### Number 5
-`cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' | sort | uniq > aufg5.txt`
+`cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' | sort | uniq > uniq-issn.txt`
 1. **sort** is used to sort the found items or terms by name.
 2. **uniq** only works when the list is sorted and outputs everything but duplicates.
