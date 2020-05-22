@@ -21,3 +21,9 @@ Working steps:
 * **`.,`** Searches for commas at the begin of a sentence **&rarr;** Replaced by single dot.
 * **`[(|)]`** Searches (only in coloumn B by selecting "certain section") where character names contain brackets **&rarr;** Replaced by nothing.
 * **`^\s`** Searches every whitespace at the beginning of a cell **&rarr;** Replaced by nothing.
+___
+## Task Nr.3
+Used commands:
+**`echo "Total number of Lines:"; cut -d, -f3 lotr_scripts_cleaned.csv | wc -l; echo "Unique words used in the dialog:"; cut -d, -f3 lotr_scripts_cleaned.csv | sort | uniq | wc -w`**
+**`echo "The Two Towers:"; grep -Ec "The Two Towers" lotr_scripts_cleaned.csv; echo "The Return of the King:"; grep -Ec "The Return of the King" lotr_scripts_cleaned.csv; echo "The Fellowship of the Ring:"; grep -Ec "The Fellowship of the Ring" lotr_scripts_cleaned.csv`**
+
