@@ -19,9 +19,10 @@ ___
 3. **cut -f9** is used to only search in the ninth coloumn (**-f9**) of the **.tsv** file, being the title one.
 ___
 ### Number 3
-`cut -f6 *.tsv | grep -Eci "\b([[:digit:]][[:digit:]][[:digit:]][[:digit:]]-[[:digit:]][[:digit:]][[:digit:]]([[:digit:]]|x))" > aufg3.txt`
+`cut -f6 *.tsv | grep -Eci "\b(([[:digit:]]{4})-([[:digit:]]{3})([[:digit:]]|x))" > aufg3.txt`
 1. The **grep** part only searches for the pattern of an ISSN being:
 	* Eight digits **(`([[:digit:]])`)** divided by a hyphen **(`(-)`)** into two groups of four digits each, where the last digit can be an "x" **(`([[:digit:]]|x)`)**.
+2. **{x}** describes how often the `[[:digit:]]` should occur in a row.
 ___
 ### Number 4
 `cut -f2 *.tsv | grep -viw "creator" | sed '/^$/d' > aufg4.txt`
