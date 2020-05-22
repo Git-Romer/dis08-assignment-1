@@ -1,13 +1,13 @@
-*** Google Spreadsheats was used to solve this exercise
+### Google Spreadsheats was used to solve this exercise
 ___
-** Task Nr.1 
+## Task Nr.1 
 Data fields:
 	* **A** - First coloumn shows an enumeration beginning with 0.
 	* **B / char** - Second coloumn describes the characters that are supposed to speak.
 	* **C / dialog** - Third coloumn shows the text that the character is supposed to read.
 	* **D / movie** - Fourth coloumn shows the name of the movie in wich the character is reading the Text.
 ___
-** Task Nr.2
+## Task Nr.2
 Used the search and replace function by pressing `STRG + H`
 Also making sure to check the box "Search with regular expressions"
 Working steps: 
